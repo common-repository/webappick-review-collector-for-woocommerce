@@ -1,0 +1,321 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.webappick_clear{
+    clear: both;
+}
+
+
+.wrc-stat:last-child{
+    margin-right:0px !important;
+}
+
+.wrc-stat{
+    width: 47%;
+    margin-right: 30px;
+    background: #fff;
+    min-height: 320px;
+    margin-bottom: 30px;
+}
+
+.wrc-heading{
+    background: rgba(255, 255, 255, 0.94);
+    height: 50px;
+    padding: 15px 15px;
+    color: #007aff;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrc-content{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.wrc-stat-group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
+.wrc-stat-review {
+    background: #5bc0de;
+    color: #fff;
+    overflow: hidden;
+}
+
+.wrc-stat-review > div {
+    width: 33.3%;
+    box-sizing: border-box;
+    border-right: 1px solid #89d1e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    height: 150px;
+    margin-bottom: 0;
+    float: left;
+}
+
+
+.wrc-stat-review > div > p{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+div.number {
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/************************ TAB DESIGN ********************************/
+
+.review_tabs{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul.wcr_tabs{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none;
+}
+
+ul.wcr_tabs  li{
+    background: none;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    border: 2px solid #CCC;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+    background: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2CC185;
+    margin-bottom: 0px !important;
+}
+
+ul.wcr_tabs li:hover {
+    background: #2CC185;
+    color: #fff;
+}
+
+
+ul.wcr_tabs li.current{
+    background: #2CC185;
+    color: #fff;
+}
+
+.wcr-tab-content{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 15px;
+    background: #fff;
+    border: 2px solid #CCC;
+    border-top:none ;
+    min-height: 200px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.wcr-tab-content.current{
+    display: block;
+}
+
+
+table.wp-list-table .column-thumb {
+    width: 52px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.column-thumb img{
+    display: block;
+}
+
+/*
+table tr td:nth-child(2) {
+   width: 0px !important;
+}
+*/
+
+.top_rated_product_list >tbody>tr>td,.top_rated_product_list >thead>tr>th {
+    font-weight:bold !important;
+}
+
+/***************** end tab design ************/
+
+@media screen and (max-width: 600px) {
+    .wrc-stat{
+        width: 100%;
+    }
+
+    .fl{
+        float: none;
+    }
+
+    .fr{
+        float: none;
+    }
+}
+
+
+
+
+
+.woo_review_left {
+    width: 48%; !important;
+}
+.woo_review_right{width: 50%; !important;}
+
+.woo_review_left{
+    float: left !important;
+}
+.woo_review_right{width: 50%; !important; float: right !important;}
+
+
+.email_setting_table_dv{
+    min-height: 704px !important;
+    background-color: #fff;
+}
+
+.email_setting_table{
+    border: none !important;
+
+}
+
+.email_setting_table tfoot td, .email_setting_table tfoot th{
+    border: none !important;
+}
+
+/*.email_view_table{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0.1em solid #c8c8c8;
+    border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}*/
+
+.email_table_bg{
+    background-image: url('../images/transparent.png') !important;
+}
+
+
+
+
+ /*from pavel vai */
+
+/*       tab design start                */
+
+p {
+    color: #222;
+}
+
+.webappick_tabs {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    /*bottom: 50px;*/
+
+}
+
+.webappick_tabs:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.webappick_tabs li {
+    float: left;
+    width: 12%;
+    display: block;
+    border: 2px solid #CCC;
+}
+
+.webappick_tabs input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.webappick-tab-name {
+    display: block;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2CC185;
+}
+
+.webappick-tab-name:hover {
+    background: #2CC185;
+    color: white;
+}
+
+.webappick_tabs .webappick-tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 0.9rem;
+    /*line-height: 5px;*/
+    /*padding: 5px;*/
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border: 2px solid #CCC;
+}
+
+.webappick_tabs [id^="tab"]:checked + label {
+    background: #2CC185;
+    color: white;
+}
+
+.webappick_tabs [id^="tab"]:checked ~ [id^="webappick-tab-content"] {
+    display: block;
+}
+
+#wf-tab-content1 > table:first-child{
+    width: 100%;
+    table-layout: auto;
+}
+
+/*end pavel vai resources*/
